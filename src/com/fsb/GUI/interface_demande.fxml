@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SplitPane dividerPositions="0.20066889632107024" layoutX="2.0" layoutY="69.0" prefHeight="331.0" prefWidth="600.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Hyperlink layoutY="22.0" text="accueil" textFill="#e8d108">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Hyperlink>
+                  <Hyperlink layoutY="62.0" text="comptes" textFill="#e8d108">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Hyperlink>
+                  <ImageView fitHeight="40.0" fitWidth="39.0" layoutX="12.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Desktop/design/téléchargement%20(2).png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Button layoutX="183.0" layoutY="250.0" mnemonicParsing="false" text="modifier" />
+                  <ImageView fitHeight="54.0" fitWidth="61.0" layoutX="372.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Desktop/design/téléchargement.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="54.0" fitWidth="55.0" layoutX="376.0" layoutY="184.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Desktop/design/pngtree-delete-vector-icon-png-image_4236969.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <Label layoutX="56.0" layoutY="22.0" text="Gestion des demandes" textFill="#e8d108">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="48.0" fitWidth="45.0" layoutX="6.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/design/permission-1931798-1636231.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
