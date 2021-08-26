@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="611.0" prefWidth="789.0" styleClass="parent" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fsb.GUI.ouvrier_first_interface">
+   <children>
+      <VBox prefHeight="27.0" prefWidth="789.0" style="-fx-background-color: #3399ff;" styleClass="sidebar">
+         <children>
+            <AnchorPane prefHeight="28.0" prefWidth="92.0" style="-fx-background-color: #3399ff #3399ff;">
+               <children>
+                  <Circle fx:id="btnClose" fill="#f22a07" layoutX="7.0" layoutY="10.0" onMouseClicked="#handleMouseEvent" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="#1fff42" layoutX="55.0" layoutY="10.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="#ffcd21" layoutX="31.0" layoutY="10.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <Button layoutX="454.0" layoutY="346.0" mnemonicParsing="false" onAction="#users" prefHeight="229.0" prefWidth="218.0" style="-fx-background-color: #3399ff;" />
+      <Button layoutX="100.0" layoutY="345.0" mnemonicParsing="false" onAction="#permission" prefHeight="229.0" prefWidth="218.0" style="-fx-background-color: #3399ff;" />
+      <Button layoutX="451.0" layoutY="96.0" mnemonicParsing="false" onAction="#cars" prefHeight="229.0" prefWidth="218.0" style="-fx-background-color: #3399ff;">
+         <graphic>
+            <ImageView fitHeight="212.0" fitWidth="183.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/car.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="99.0" layoutY="95.0" mnemonicParsing="false" onAction="#materiels" prefHeight="229.0" prefWidth="218.0" style="-fx-background-color: #3399ff;">
+         <graphic>
+            <ImageView fitHeight="166.0" fitWidth="152.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/materials.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="156.0" layoutY="288.0" prefHeight="21.0" prefWidth="104.0" text="Materiels" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="532.0" layoutY="280.0" prefHeight="21.0" prefWidth="104.0" text="Cars" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="212.0" fitWidth="183.0" layoutX="122.0" layoutY="345.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/permission.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="157.0" layoutY="534.0" prefHeight="36.0" prefWidth="120.0" text="Permission" textFill="#f5f5f5">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="212.0" fitWidth="183.0" layoutX="472.0" layoutY="345.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/user.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="496.0" layoutY="533.0" prefHeight="36.0" prefWidth="136.0" text="My account" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="hello" layoutX="98.0" layoutY="34.0" prefHeight="62.0" prefWidth="642.0" textFill="#3399ff">
+         <font>
+            <Font name="Baskerville Old Face" size="42.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

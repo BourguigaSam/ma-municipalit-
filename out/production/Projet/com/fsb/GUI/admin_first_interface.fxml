@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="611.0" prefWidth="789.0" styleClass="parent" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fsb.GUI.admin_first_interface">
+   <children>
+      <VBox prefHeight="27.0" prefWidth="789.0" style="-fx-background-color: #A9A9A9;" styleClass="sidebar">
+         <children>
+            <AnchorPane prefHeight="28.0" prefWidth="92.0" style="-fx-background-color: #A9A9A9;">
+               <children>
+                  <Circle fx:id="btnClose" fill="#f22a07" layoutX="7.0" layoutY="10.0" onMouseClicked="#handleMouseEvent" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="#1fff42" layoutX="55.0" layoutY="10.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="#ffcd21" layoutX="31.0" layoutY="10.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <Button layoutX="539.0" layoutY="346.0" mnemonicParsing="false" onAction="#users" prefHeight="229.0" prefWidth="218.0" />
+      <Button layoutX="286.0" layoutY="345.0" mnemonicParsing="false" onAction="#permission" prefHeight="229.0" prefWidth="218.0" />
+      <Button layoutX="36.0" layoutY="346.0" mnemonicParsing="false" onAction="#project" prefHeight="229.0" prefWidth="218.0" />
+      <Button layoutX="36.0" layoutY="96.0" mnemonicParsing="false" onAction="#event" prefHeight="229.0" prefWidth="218.0" />
+      <Button layoutX="539.0" layoutY="96.0" mnemonicParsing="false" onAction="#cars" prefHeight="229.0" prefWidth="218.0">
+         <graphic>
+            <ImageView fitHeight="212.0" fitWidth="183.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/car.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="286.0" layoutY="95.0" mnemonicParsing="false" onAction="#materiels" prefHeight="229.0" prefWidth="218.0">
+         <graphic>
+            <ImageView fitHeight="166.0" fitWidth="152.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/materials.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fitHeight="212.0" fitWidth="183.0" layoutX="54.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/event.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="111.0" layoutY="289.0" prefHeight="21.0" prefWidth="104.0" text="Events">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="351.0" layoutY="289.0" prefHeight="21.0" prefWidth="104.0" text="Materiels">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="622.0" layoutY="288.0" prefHeight="21.0" prefWidth="104.0" text="Cars">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="212.0" fitWidth="183.0" layoutX="54.0" layoutY="351.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/projet.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="102.0" layoutY="535.0" prefHeight="21.0" prefWidth="104.0" text="Projects">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="212.0" fitWidth="183.0" layoutX="304.0" layoutY="345.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/permission.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="340.0" layoutY="534.0" prefHeight="36.0" prefWidth="120.0" text="Permission">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="212.0" fitWidth="183.0" layoutX="557.0" layoutY="345.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/user.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="595.0" layoutY="533.0" prefHeight="36.0" prefWidth="120.0" text="Personnel">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="hello" layoutX="61.0" layoutY="29.0" prefHeight="62.0" prefWidth="642.0">
+         <font>
+            <Font name="Baskerville Old Face" size="42.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fsb.GUI.SampleController">
+    <children>
+        <AnchorPane id="AnchorPane" layoutX="1.0" prefHeight="474.0" prefWidth="737.0">
+            <children>
+                <Pane layoutX="-7.0" layoutY="-7.0" prefHeight="484.0" prefWidth="168.0" style="-fx-background-color: #ffd11a;">
+                    <children>
+                        <AnchorPane layoutX="6.0" layoutY="8.0" prefHeight="28.0" prefWidth="92.0">
+                            <children>
+                                <Circle fx:id="btnClose" fill="#f22a07" layoutX="7.0" layoutY="10.0" onMouseClicked="#handleMouseEvenet" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+                                <Circle fill="#1fff42" layoutX="55.0" layoutY="10.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+                                <Circle fill="#ffcd21" layoutX="31.0" layoutY="10.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+                            </children>
+                        </AnchorPane>
+                  <Button fx:id="precedent" layoutX="13.0" layoutY="447.0" mnemonicParsing="false" onAction="#precedent" text="&lt;--retour" />
+                    </children></Pane>
+                <TextField fx:id="username" layoutX="211.0" layoutY="104.0" prefHeight="25.0" prefWidth="104.0" />
+                <TextField fx:id="username_canonical" layoutX="421.0" layoutY="104.0" prefHeight="21.0" prefWidth="104.0" />
+                <TextField fx:id="email" layoutX="211.0" layoutY="212.0" prefHeight="25.0" prefWidth="209.0" />
+                <Button layoutX="572.0" layoutY="431.0" mnemonicParsing="false" onAction="#add_personnel" prefHeight="25.0" prefWidth="66.0" style="-fx-background-color: #00 #A9A9A980ff;" text="valider" textFill="#1b1a1a" />
+                <Label fx:id="terms" layoutX="211.0" layoutY="428.0" prefHeight="31.0" prefWidth="168.0" textFill="RED">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Label>
+            <TextField fx:id="password" layoutX="508.0" layoutY="354.0" prefHeight="25.0" prefWidth="104.0" promptText="password" />
+            <TextField fx:id="image_id" layoutX="181.0" layoutY="422.0" prefHeight="34.0" prefWidth="63.0" promptText="image_id" />
+            <TextField fx:id="cin" layoutX="605.0" layoutY="104.0" prefHeight="25.0" prefWidth="123.0" />
+            <Label layoutX="167.0" layoutY="106.0" prefHeight="17.0" prefWidth="51.0" text="Nom:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="560.0" layoutY="106.0" text="N°CIN:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="361.0" layoutY="106.0" text="Prénom:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="167.0" layoutY="158.0" text="Date de naissance:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <DatePicker layoutX="292.0" layoutY="156.0" />
+            <Label layoutX="167.0" layoutY="214.0" text="Email:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="508.0" layoutY="158.0" text="Sexe:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <CheckBox layoutX="560.0" layoutY="160.0" mnemonicParsing="false" text="Feminin" />
+            <CheckBox layoutX="560.0" layoutY="188.0" mnemonicParsing="false" text="Masculin" />
+            <Label layoutX="165.0" layoutY="259.0" text="Adresse:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="167.0" layoutY="313.0" text="N°téléphone:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField layoutX="228.0" layoutY="257.0" prefHeight="25.0" prefWidth="266.0" />
+            <TextField layoutX="254.0" layoutY="311.0" />
+            <Label layoutX="167.0" layoutY="356.0" text="Role:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="403.0" layoutY="356.0" text="Mot  de passe:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ChoiceBox layoutX="206.0" layoutY="354.0" prefWidth="150.0" />
+            <TextField fx:id="role" layoutX="409.0" layoutY="439.0" prefHeight="25.0" prefWidth="56.0" promptText="Role" />
+            <Button layoutX="650.0" layoutY="431.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="66.0" text="annuler" />
+                <Text layoutX="179.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter un personnel">
+                    <font>
+                        <Font name="Arial Bold" size="30.0" />
+                    </font>
+                </Text>
+            <Label layoutX="546.0" layoutY="261.0" text="Status:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ChoiceBox layoutX="592.0" layoutY="259.0" prefHeight="25.0" prefWidth="87.0" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

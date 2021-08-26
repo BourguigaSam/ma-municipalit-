@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="611.0" prefWidth="789.0" styleClass="parent" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fsb.GUI.hr_first_interface">
+   <children>
+      <VBox prefHeight="27.0" prefWidth="789.0" style="-fx-background-color: #3399ff;" styleClass="sidebar">
+         <children>
+            <AnchorPane prefHeight="28.0" prefWidth="92.0" style="-fx-background-color: #6495ED;">
+               <children>
+                  <Circle fx:id="btnClose" fill="#f22a07" layoutX="7.0" layoutY="10.0" onMouseClicked="#handleMouseEvent" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="#1fff42" layoutX="55.0" layoutY="10.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="#ffcd21" layoutX="31.0" layoutY="10.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <Button layoutX="408.0" layoutY="166.0" mnemonicParsing="false" onAction="#users" prefHeight="313.0" prefWidth="301.0" style="-fx-background-color: #6495ED;" />
+      <ImageView fitHeight="260.0" fitWidth="279.0" layoutX="431.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/user.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="498.0" layoutY="426.0" prefHeight="36.0" prefWidth="136.0" text="My account" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="hello" layoutX="98.0" layoutY="34.0" prefHeight="62.0" prefWidth="642.0" textFill="#3399ff">
+         <font>
+            <Font name="Baskerville Old Face" size="42.0" />
+         </font>
+      </Label>
+      <Button layoutX="46.0" layoutY="167.0" mnemonicParsing="false" onAction="#event" prefHeight="313.0" prefWidth="301.0" style="-fx-background-color: #6495ED;" />
+      <ImageView fitHeight="260.0" fitWidth="312.0" layoutX="64.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/event.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="156.0" layoutY="436.0" prefHeight="21.0" prefWidth="104.0" text="Events" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
